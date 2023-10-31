@@ -1,6 +1,23 @@
-import React, { StrictMode } from "react";
-import ReactDOM from "react-dom";
+import React from "react";
+import { createRoot } from 'react-dom/client';
 import "./output.css";
-import MyApp from "./app";
+import Landing from "./landing"
+import BgGrid from "./bg-grid"
+import Content from "./content"
+import Display from "./api-test";
+document.getElementById("app").classList.add("bg-base-100","h-screen");
 
-ReactDOM.render(<MyApp />, document.getElementById("app"));
+function App() {
+    return (
+        <>
+            <Landing />
+            {/* <Content/> */}
+            <Display/>
+        </>
+    )
+}
+
+export default App;
+
+const root = createRoot(document.getElementById('app'));
+root.render(<App/>)

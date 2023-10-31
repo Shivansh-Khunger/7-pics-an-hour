@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* @layer utilities {
-  .ex {
-    --daisy-theme: dark;
+  .ex::before {
+    
   }
 } */
